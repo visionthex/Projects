@@ -29,10 +29,10 @@ body::before{
   background-repeat: no-repeat;
   background-position: center;
 }
+
 #title{
-  color: var(--color-green);
+  color: var(--color-white);
   font-weight: 600;
-S
 
 }
 h1{
@@ -137,14 +137,14 @@ form{
   display: block;
   width: 100%;
   padding:0.5rem 0.75rem;
-  background: var(--color-green);
+  background: var(--color-white);
   color: inherit;
   border-radius: 15px;
   cursor: pointer;
   outline: none;
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: blue;
+  color: rgb(0, 0, 0);
   border: none;
 }
 
