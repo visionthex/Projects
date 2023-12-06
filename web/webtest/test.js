@@ -1,5 +1,5 @@
 // FUNCTION DECLARATION
-// let x = 343;
+//let x = 343;
 // let someString = "Wow, we're learning JavaScript!";
 // let y = true;
 //
