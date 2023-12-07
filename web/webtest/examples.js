@@ -567,3 +567,518 @@ console.log('should also log formatted haiku:\n', resultHaiku2);
 //Moves west, flowers\' shadows
 //Creep eastward.
 */
+
+/*
+// EXPRESSIONS
+console.log(10 + 4);
+
+let sum;
+
+console.log(sum = 14); // outputs 14
+console.log(sum); // outputs 14
+
+// OPERATORS
+console.log(true); // logs 'true'
+console.log(!true); // logs 'false'
+console.log(!"Hello"); // lofs 'false'
+console.log(!5); // logs 'false'
+console.log(!!"Hello"); // outputs 'true'
+console.log(!!5); // outputs 'true'
+
+// LOGICAL AND (&&)
+console.log(0 && true); // outputs 0
+console.log(3 + 5 && "Hello"); // outputs "hello"
+console.log(3 + 5 && "Hello" == 0); // outputs 'false'
+console.log(3 + 5 && 3 == 3); // outputs 'true'
+console.log(false && true); // outputs 'false'
+
+// LOGICAL OR (||)
+console.log(3 +5 || "Hello"); // outputs 8
+console.log(undefined || !!"Hello" == true); //outputs true
+console.log(true || 3 == 5); // outputs true
+
+// PRECEDENCE OF EVALUATION IN NESTED EXPRESSIONS
+console.log(3 + 7 * 10); // returns 73, not 100
+console.log((3 + 7) * 10); // returns 100
+console.log(!7 + "Hello"); // returns "falsehello"
+console.log(!(7 + "Hello")); // returns 'false'
+
+// EXAMPLE 1
+console.log("Example 1");
+console.log(true || false);
+console.log(11 && 0);
+console.log(!undefined);
+console.log(12 < 6);
+console.log(3 + 4 - 2);
+console.log(5 === 5);
+
+// EXAMPLE 2
+console.log("Example 2");
+console.log(true || false && true);
+console.log((true || false) && true);
+console.log(undefined !== 22 + 3);
+console.log(!(undefined !== 22 + 3));
+console.log((12 > 6) + 1);
+console.log(!5 == 0);
+console.log(!5 === 0);
+*/
+
+/*
+// CONDITIONALS
+let number1 = 10;
+let number2 = 5;
+
+if(number1 > number2){
+  console.log("Number 1 is greater then number 2");
+}
+
+// IF STATEMENT
+let userAge = 21;
+let userSpeaksEnglish = true;
+
+if(userAge >= 18){
+  if(userSpeaksEnglish == true){
+    console.log("You can become a pilot");
+    // according to the FAA
+  }
+}
+
+// &&(AND) or || (OR)
+let userAge = 21;
+let userSpeaksEnglish = true;
+
+if(userAge >= 18 && userSpeaksEnglish == true){
+  console.log("You can become a pilot");
+  // according to the FAA
+}
+
+let dress = "white";
+
+if(dress == "white" || dress == "black"){
+  console.log("Your dress is either black OR white");
+}
+
+// IF...ELSE STATEMENT
+let userAge = 21;
+let userSpeaksEnglish = true;
+
+if(userAge >= 18 && userSpeaksEnglish == true){
+  console.log("You can become a pilot");
+} else {
+  console.log("You cannot become a pilot");
+}
+
+let dress = "white";
+
+if(dress == "white"){
+  console.log("Your dress is white");
+} else if(dress == "black"){
+  console.log("Your dress is black");
+} else {
+  console.log("Your dress is neither black nor white");
+}
+
+let dress = "white";
+
+if(dress == "white"){
+  console.log("Your dress is white");
+} else if(dress == "black"){
+  console.log("Your dress is black");
+} else {
+  console.log("Your dress is neither black nor white")
+}
+
+...
+else
+  console.log("Your dress is neither black nor white");
+  console.log("You still look great!");
+
+// the above looks correct at first glance, but it behaves the same as below, not what we wanted!
+
+...
+else
+  console.log("Your dress is neither black nor white");
+
+console.log("You still look great!");
+
+// explicitly define the scope, only logs when the else is triggered
+...
+else {
+  console.log("Your dress is neither black nor white");
+  console.log("You still look great!");
+}
+
+// EXPRESSIONS VS STATEMENTS
+console.log(if(5 == 5) console.log("5"));
+
+//TERNARY EXPRESSIONS
+let age = 22;
+docuemnt.write(age >= 21 ? '<h1>The user can drink<h1>' : '<h1>The user cannot drink<h1>');
+
+// FOR LOOPS
+for (let step = 0; step < 300; step++) {
+  console.log('I will ask questions every time i do not understand');
+}
+
+// WHILE LOOPS
+let number1 = 10;
+let number2 = 20;
+
+while(number1 < number2){
+  number1 = number1 * 2;
+  number2 = number2 + 20;
+
+  console.log("number1", number1);
+  console.log("number2", number2);
+}
+
+// DO...WHILE
+let number1 = 10;
+let number2 = 10;
+
+do {
+  console.log("No other loop would execute this");
+} while (number1 < number2);
+
+// SWITCH STATEMENT
+const expr = 'Spring';
+
+switch (expr) {
+  case 'Summer':
+    console.log(`The season is ${expr}`);
+    break;
+  case 'Fall':
+    console.log(`The season is ${expr}`);
+    break
+  case 'Winter':
+    console.log(`The season is ${expr}`);
+    break
+  case 'Spring':
+    console.log(`The season is ${expr}`);
+    break
+  default:
+    console.log(`Sorry, ${expr} is not a season`);
+}
+
+// EXAMPLE 1
+function myFunction() {
+  let result = ''
+  for (let i = 0; i < 100; i++) {
+    result += "I will excessively log\n";
+}
+  return result;
+}
+
+// EXAMPLE 2
+function getDinoColor(dino) {
+  // Your code here
+  switch (dino) {
+      case 'tyrannosaurus':
+          return 'purple';
+          break;
+      case 'protoceratops':
+          return 'yellow';
+          break;
+      case 'triceratops':
+          return 'green';
+          break;
+      default:
+        return 'rainbow';
+  }
+}
+*/
+
+/*
+// OBJECT LITERALS
+let dog = {};
+let dog = {name: "Chance", breed: "German Shepherd", weight: 100};
+
+var myObject = {
+  exists: true,
+  name: "Galvanize",
+  year: 2023,
+  languages: ["JavaScript", "HTML", "CSS"],
+  myFunc: function(){
+    console.log("Object Literals are Awesome!")
+  },
+  nested: {
+    where: "I am an Object inside of an Object"
+  }
+}
+
+var yourObject = {
+  type: 'object'
+}
+
+// BRACKET NOTATION VS DOT NOTATION
+var superman = {
+  alias: "Superman",
+  name: "Clark Kent",
+  'location': "Smallville",
+  'age in years': 50
+}
+console.log(superman.name); // => "Clark Kent"
+//console.log(superman.'location') // => "SyntaxError"
+console.log(superman.location) // => "Smallville"
+//console.log(superman.'age in years') // => "Error: unexpected String"
+
+console.log(superman['name']) // => "Clark Kent"
+console.log(superman['location']) // => "Smallville"
+console.log(superman['age in years']); // => 50
+
+var superman = {
+  alias: "Superman",
+  name: "Clark Kent",
+  'location': "Smallville",
+  'age in years': 50
+}
+
+let currentKey = 'alias';
+console.log(superman[currentKey]);
+currentKey = 'location';
+console.log(superman[currentKey]);
+currentKey = 'age in years';
+console.log(superman[currentKey]);
+
+let worstObjectEver = {
+  22: 'fish',
+  start: 99,
+}
+
+// ERROR, Uncaught SyntaxError: unexpected token: numeric literal
+//console.log(worstObjectEver.22)
+// CORRECT, logs 'fish'
+console.log(worstObjectEver[22])
+
+let myKey = 'start';
+// undefined, myKey is interpreted as the actual key and there is not key 'myKey' in the object
+//console.log(worstObjectEver.myKey)
+// CORRECT, logs 99 - the value of the variable 'start' is used as the key
+console.log(worstObjectEver[myKey])
+
+// ADDING AND UPDATING OBJECT PROPERTIES
+let behavior = {};
+console.log(behavior); // => {}
+
+behavior.outward = 'rambunctious';
+console.log(behavior); // => {outward: 'rambunctious'}
+
+behavior.outward = 'mellow';
+console.log(behavior); // => {outward: 'mellow'}
+
+// ITERATING OBJECTS WITH FOR...IN LOOP
+let dog = {name: "Chance", breed: "German Shepherd", weight: 100};
+
+for (var key in dog){
+  console.log(key)
+}
+//  Expected Output
+//  => "name"
+//  => "breed"
+//  => "weight"
+
+  for (var key in dog){
+    console.log(dog[key])
+  }
+//    Expected Output
+//    => "Chance"
+//    => "German Shepherd"
+//    => 100
+
+// THE IN OPERATOR
+let dog = {name: "Chance", breed: "German shepherd", weight: 100};
+
+if('age' in dog) console.log("The dog has an age");
+else console.log("The dog has NO age");
+
+let key = "breed";
+
+if(key in dog) console.log(`The dog has a ${key}`);
+else console.log(`The dog has NO ${key}`);
+
+// ACCESSING DATA WITHIN NESTED OBJECTS
+var unitedStates = {
+  population : 331900000,
+  states : {
+    nd : {
+      capital: 'Bismark',
+      population : 774948,
+      largestCity : {
+        name: 'Fargo',
+        population : 126748
+      }
+    },
+    tx : {
+      capital : 'Austin',
+      population : 29530000,
+      largestCity : {
+        name: 'Houston',
+        population : 2326000
+      }
+    }
+  }
+}
+console.log(unitedStates.states.nd.capital); // => 'Bismark'
+
+let yard = {};
+
+// ERROR, plants is undefined!
+yard.plants.trees = 'fir';
+
+// All good, plants holds a nested object instead of undefined
+yard.plants = {};
+yard.plants.trees = 'fir';
+
+for (key in unitedStates){
+  console.log(key)
+}
+//  Expected Output
+//  population
+//  states
+
+
+for (key in unitedStates){
+  console.log(unitedStates[key])
+}
+//  Expected Output
+//  => 331900000
+//  => > Object { nd: Object { capital: "Bismark", population: 774948, largestCity: Object { name: "Fargo", population: 126748 } }, tx: Object { capital: "Austin", population: 29530000, largestCity: Object { name: "Houston", population: 2326000 } } }
+//  above is all of the nested information
+
+for (key in unitedStates){
+  for (subKey in unitedStates[key]){
+    console.log(subKey);
+  }
+}
+  /* Expected Output
+  => "nd"
+  => "tx"
+
+  for (key in unitedStates){
+    for (subKey in unitedStates[key]){
+      console.log(unitedStates[key][subKey]);
+    }
+  }
+  //  Expected Output
+  //  => > Object { capital: "Bismark", population: 774948, largestCity: Object { name: "Fargo", population: 126748 } }
+  //  => > Object { capital: "Austin", population: 29530000, largestCity: Object { name: "Houston", population: 2326000 } }
+
+//EXAMPLE 2
+let secondWorstObjectEver = {
+  fish: 'gold',
+  'i love spaces': 17,
+  underscores_are_better: 'probably true',
+  5876: 'numbersnumbersnumbers',
+  'exactly': {},
+};
+console.log(secondWorstObjectEver.'exactly');
+
+// EXAMPLE 3
+let pets = {
+  dog: 'Bingo',
+  cat: 'Cat',
+  bird: 'Loki',
+};
+
+for (let key in pets) {
+  console.log(key + ':' + pets.key + '\n');
+}
+
+
+for (let key in pets) {
+  console.log(key + ':' + pets[key] + '\n');
+}
+
+// EXAMPLE 4
+let userInfo = {
+  name: 'Wallace',
+  address: '62 West Wallaby Street, Wigan, Lancashire',
+  appearance: {
+    hair: {
+      color: 'brown',
+      style: 'bald',
+    },
+    height: 'tallish',
+    eye_color: 'brown',
+  },
+  occupation: {
+    title: 'inventor',
+    location: 'home',
+    associates: 'Grommit',
+  },
+}
+console.log(userInfo.appearance.color);
+*/
+
+/*
+//EXAMPLE 1
+const myFunction = (number) => {
+  const functionArray = [
+    (num) => (num += 1),
+    // add function here...
+    (num) => num * 2,
+    (num) => num * 534,
+    (num) => num / 3,
+    (num) => Math.round(num),
+  ];
+
+  for (const func of functionArray) {
+    // complete functionality...
+    number = func(number);
+  }
+  return number;
+}
+
+//EXAMPLE 2
+function returnAnElement(array, index) {
+  // Check if the index is within the bounds of the array
+  if (index >= 0 && index < array.length) {
+    // Return the element at the given index
+    return array[index];
+  } else {
+    // If the index is out of bounds, return undefined
+    return undefined;
+  }
+}
+*/
+
+/*
+// EXAMPLE 3
+function getLastElement(array) {
+  if (array.length === 0) {
+    return undefined;
+  } else {
+    return array[array.length - 1];
+  }
+}
+
+var output = getLastElement([1, 2, 3, 4]);
+console.log(output); // --> 4
+*/
+
+// EXAMPLE 4
+function computeAverageOfNumbers(num) {
+  if (num.length === 0) {
+    return 0;
+  }
+  let sum = 0;
+  let totalNumbers = num.length;
+  for (let i = 0; i < totalNumbers; i++) {
+    sum += num[i];
+  }
+  let average = sum / totalNumbers;
+  return average;
+}
+
+var input = [1,2,3,4,5];
+var output = computeAverageOfNumbers(input);
+console.log(output); // --> 3
+
+// EXAMPLE 5
+function addToBack(arr, element) {
+  arr.push(element);
+  return arr;
+}
+
+var output = addToBack([1, 2], 3);
+console.log(output); // -> [1, 2, 3]
