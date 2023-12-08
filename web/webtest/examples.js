@@ -1011,6 +1011,117 @@ console.log(userInfo.appearance.color);
 */
 
 /*
+// ARRAY
+var myArray = []
+var worldAuthors = ['Edgar Allan Poe', 'Fyodor Dostoevsky', 'J.R.R. Tolkien', 'Homer', 'Victor Hugo'];
+
+// ARRAY INDEXING
+console.log(worldAuthors.indexOf('Edgar Allan Poe')); // output 0
+console.log(worldAuthors.indexOf('Homer')); // output 3
+
+worldAuthors[0] = 'Miguel de Cervantes';
+worldAuthors[2] = "Paulo Coelho";
+
+// USING ARRAY.LENGTH
+console.log(worldAuthors[worldAuthors.length - 1]);
+
+// ITERATING OVER ARRAYS
+let index = 0;
+console.log(someArrayName[index]);
+
+let index = 2;
+console.log(someArrayName[index]); // outputs third element
+
+// FOR LOOPS
+for(let index = 0; index < worldAuthors.length; index++){
+  console.log(worldAuthors[index]);
+}
+
+// FOR...OF LOOP
+for(let element of worldAuthors){
+  console.log(element);
+}
+
+let array = ["dog", "cat", "fish"];
+
+for(let [index, animal] of array.entries()){
+  console.log(index, animal);
+}
+
+// ARRAY.isARRAY
+console.log(Array.isArray(apartments)); // returns in console: true
+
+// THE PUSH() and POP() methods
+let cities = ["Ottawa"];
+cities.push("Bangkok");
+
+console.log(cities); // output: ["Ottawa", "Bangkok"]
+
+// THE SHIFT() and UNSHIFT() METHODS
+let cities = ["Ottawa"];
+cities.unshift("Bangkok");
+
+console.log(cities); // output: ["Bangkok", "Ottawa"]
+
+cities.shift();
+
+console.log(cities); // output: ["Ottawa"]
+
+// THE SPLICE() vs SLICE() METHODS
+myArray.splice(index, deleteCount, element)
+
+let cities = ["Ottawa"];
+cities.splice(1, 0, "Bangkok"); // cities is now ["Ottawa", "Bangkok"]
+cities.splice(1, 0, "Kathmandu"); // cities is now ["Ottawa", "Kathmandu", Bangkok"]
+cities.splice(1, 2); // cities is not ["Ottawa"]
+cities.splice(0, 1, "Kathmandu", "Bangkok"); // cities is now ["Kathmandu", "Bangkok"]
+
+let cities = ["Ottawa", "Tokyo"];
+console.log(cities.splice(0, 1, "Kathmandu", "Bangkok")); // outputs ["Ottawa"] as that is what was removed
+console.log(cities); // outputs ["Kathmandu", "Bangkok", "Tokya"]
+
+// THE CONCAT() METHOD
+let cities = ["Ottawa", "Tokyo"];
+let moreCities = ["Kathmandu", "Bangkok"];
+
+cities.concat(moreCities);
+
+console.log(cities); //what is the output?
+let combinedCities = cities.concat(moreCities);
+
+console.log(combinedCities); //what is the output?
+let evenMoreCities = ["Samarkand", "Sofia"];
+
+combinedCities = moreCities.concat(cities, evenMoreCities);
+
+console.log(combinedCities); //what is the output?
+combinedCities = evenMoreCities.concat("Belgrade");
+
+console.log(combinedCities); //what is the output?
+
+// NESTED ARRAYS
+const apartments = [ ["001", "002", "003", "004", "005"], ["101", "102", "103", "104", "105"], ["201", "202", "203", '204', "205"], ["301", "302", "303", "304", "305"] ];
+
+for(let index = 0; index < apartments.length; index++){
+  console.log(apartments[index]);
+}
+
+// ITERATING OVER NESTED ARRAYS
+for(let floorIndex = 0; floorIndex < apartments.length; floorIndex++){
+  for(let aptIndex = 0; aptIndex < apartments[floorIndex].length; aptIndex++){
+      apartments[floorIndex][aptIndex] = "A" + apartments[floorIndex][aptIndex];
+  }
+}
+
+console.log(apartments);
+
+const apartments = [
+  ["001", "002", "003", "004", "005"],
+  ["101", "102", "103", "104", "105"],
+  ["201", "202", "203", '204', "205"],
+  ["301", "302", "303", "304", "305"]
+];
+
 //EXAMPLE 1
 const myFunction = (number) => {
   const functionArray = [
@@ -1040,9 +1151,7 @@ function returnAnElement(array, index) {
     return undefined;
   }
 }
-*/
 
-/*
 // EXAMPLE 3
 function getLastElement(array) {
   if (array.length === 0) {
@@ -1054,7 +1163,6 @@ function getLastElement(array) {
 
 var output = getLastElement([1, 2, 3, 4]);
 console.log(output); // --> 4
-*/
 
 // EXAMPLE 4
 function computeAverageOfNumbers(num) {
@@ -1082,3 +1190,44 @@ function addToBack(arr, element) {
 
 var output = addToBack([1, 2], 3);
 console.log(output); // -> [1, 2, 3]
+*/
+
+/*
+let userNameCorrect = false;
+let passwordCorrect = false;
+
+if( must be evaluated to true or false userNameCorrect === "Billy"){
+  console.log("Correct Username")
+  if(passwordCorrect){
+    console.log("Correct Password")
+  }
+} else {
+    console.log("Login Failed")
+}
+*/
+
+/*
+let tempArray = [9, 15, 13, 21, 14];
+
+for(let i = 0; i < tempArray.length; i ++){
+  console.log(tempArray[i])
+}
+
+for(let arr of tempArry){
+  console.log(arr)
+}
+
+for(let in tampArray){
+  console.log(arr)
+}
+*/
+
+/*
+let person = {name:"Dude", age:56, drink:"White Russian"}
+
+for(let key in person){
+  console.log("This is the key: ", key)
+  console.log("This is the value: ",person[key])
+}
+*/
+
