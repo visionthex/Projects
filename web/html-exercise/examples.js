@@ -1231,4 +1231,26 @@ for(let key in person){
 }
 */
 
-console.log(1,2,3,4);
+// console.log(1,2,3,4);
+
+// High order Function Chaining
+// let garbage = [1, 'h', 4, 6, null, 'SDI22', 56, 1137, '', true, 132]
+
+// let bestEver = garbage.filter(element => typeof element === 'string' && element.charAt(0) === "S");
+// .find(element => element.charAt(0) === "S")
+// console.log(bestEver);
+// console.log(garbage);
+
+// let actualBestEver = bestEver.find(element => element.charAt(0) === "S")
+// console.log(actualBestEver)
+
+// let total = garbage.filter(elm => typeof elm === 'number').reduce((x, y) => x + y);
+// console.log(total);
+
+// let newTotal = garbage.filter(elm => typeof elm === 'number').map(element => element * 5);
+// console.log(newTotal);
+// console.log(garbage.map(x => console.log(x)));
+
+
+// let nothing = garbage.map(x => x);
+// console.log(nothing);
